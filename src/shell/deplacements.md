@@ -263,6 +263,36 @@ ou
 $ rm -r Je suis un seul appel a mkdir
 ```
 
+## Copier des fichiers et répertoires
+
+Pour copier des fichiers et des répertoires, tu peux utiliser la commande
+**cp**.
+
+```sh
+$ ls
+$ touch fichier_1
+$ cp fichier_1 fichier_2
+$ mkdir repertoire_1
+$ cp fichier_1 fichier_2 repertoire_1
+$ cp -r repertoire_1 repertoire_2
+$ ls
+fichier_1  fichier_2  repertoire_1  repertoire_2
+$ ls repertoire_1 repertoire_2
+repertoire_1:
+fichier_1  fichier_2
+
+repertoire_2:
+fichier_1  fichier_2
+$ mkdir repertoire_3
+$ cp -r repertoire_1 repertoire_2 repertoire_3
+$ ls repertoire_3
+repertoire_1  repertoire_2
+$
+```
+
+Comme tu peux le constater, si tu veux copier un répertoire, il faut le faire
+récursivement avec l'option **-r**.
+
 ## Renommer des fichiers et répertoires
 
 Pour renommer ou déplacer un répertoire ou un fichier, utilise la commande
@@ -283,6 +313,9 @@ $ ls ventre
 gateau
 $
 ```
+
+En réalité quand tu *renommes* un fichier, tu le déplaces dans le même
+répertoire avec un nouveau nom.
 
 ## cd en arrière
 
