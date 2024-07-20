@@ -66,6 +66,10 @@ Sache que tu peux créer plusieurs répertoires d'un coup en les donnant à **ls
 
 ```sh
 $ mkdir Je suis un seul appel a mkdir
+
+# Cache-cache
+
+Il y a une dernière chose dont je ne t'ai pas parlé. Les fichiers cachés.
 ```
 
 Les commandes shell ont pour habitude de ne rien afficher si tout se passe bien.
@@ -117,6 +121,62 @@ Pour se faire, utilise la commande **touch**.
 $ touch je_suis_un_fichier
 $ ls
 ```
+
+# Listing long format
+
+Jusqu'ici tu as dû voir les différences entre fichier et répertoire aux couleurs
+affichées sur le terminal avec **ls**. Cette coloration est dûe à une
+configuration de **ls**.
+
+Dans mon cas, si j'exécuter **which ls** pour en savoir plus sur la commande
+**ls**, j'ai ceci :
+
+```sh
+$ which ls
+ls: aliased to ls --color=auto
+$
+```
+
+Ca veut dire que **ls** utilise par défaut le paramètre **--color=auto** qui
+colore les noms des fichiers et répertoires dans ton terminal.
+
+Exécute maintenant ceci, je fais exprès de cacher certains informations pour te
+forcer à exécuter les commandes :
+```sh
+$ ls
+$ mkdir repertoire
+$ touch fichier
+$ /bin/ls
+repertoire fichier
+$
+```
+
+Tu vois maintenant que tout s'affiche en blanc. Ce que tu as fait, c'est
+exécuter le programme **ls** directement depuis là où il est installé, sans la
+configuration de coloration automatique de ton shell.
+
+Imagine tomber un jour sur une distribution Linux qui n'affiche pas les couleurs
+par défaut, comment savoir si ce que tu listes et un fichier ou un répertoire ?
+
+Tu vas utiliser le paramètre **-l** à **ls** pour afficher le *long listing
+format*, pour afficher plein d'informations sur le répertoire où tu te trouves.
+
+Exécute
+```sh
+$ ls -l
+total 0
+-rw-r--r-- 1 gelules wheel  0 Jul 20 18:56 fichier
+drwxr-xr-x 2 gelules wheel 40 Jul 20 18:55 repertoire
+```
+
+La première ligne indique combien de place sur le disque prend ce que tu listes.
+Pour l'instant c'est 0 car c'est vide.
+
+Mainenant, pour chaque ligne, regarder le tout premier caractère. Si c'est un
+tirer '-', c'est que tu listes un fichier, si c'est un 'd' minuscule, c'est que
+c'est un répertoire.
+
+Tu apprendras le reste des informations listées dans un prochain chapitre.
 
 ## Lister récursivement
 
@@ -320,6 +380,7 @@ $ mkdir toto
 $ cd toto
 $ rmdir ../toto
 $ cd .
+$ pwd
 ```
 Que se passe t-il ? Tout dépend de ton shell, certains feront avec à leur
 manière, d'autres afficheront une erreur. C'est un comportement indéfini, le
@@ -366,3 +427,45 @@ $ reboot
 $ cd /tmp
 $ ls
 ```
+
+# Cache-cache
+
+Il y a une dernière chose dont je ne t'ai pas parlé. Les fichiers cachés.
+
+Je vais exprès de cacher certains informations pour te forcer à pratiquer.
+
+Exécute ces commandes depuis ton **HOME** :
+```sh
+$ mkdir Test
+$ cd Test
+$ touch .cache affiche
+$ ls
+???
+$
+```
+
+Où est le fichier **.cache** ? Il est **caché**. Les fichiers et répertoires
+dont le nom commencent par un point '.' ne sont pas affichés, car il s'agit en
+général de fichier de configuration personnelle pour tes programmes et c'est
+plus élégant de ne pas toujours les afficher.
+
+Si tu veux les afficher, exécute :
+```sh
+$ ls -a
+. .. .cache affiche
+```
+
+Mais que sont '.' et '..' ? Rappelle toi, le '.' représente le répertoire dans
+lequel tu te trouves et '..' représente le répertoire parent. 
+
+Si tu veux afficher tout ce qui est caché sauf '.' et '..', exécute :
+```sh
+$ ls -A
+.cache affiche
+```
+
+Je te laisse maintenant exécuter cette dernière commande **dans ton HOME**. Tu
+verras que même ton explorateur graphique ne t'affiche pas tout par défaut (mais
+c'est configurable).
+
+![Fichiers cachés dans Thunar](./deplacements/thunar_hidden_files.png "Fichiers cachés dans Thunar")
