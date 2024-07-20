@@ -47,6 +47,13 @@ The table below shows the section numbers of the manual followed by the types of
 
 Pour ta picine, les 3 premières sections seront à consulter.
 
+La 1ere contient celle des **binaires** (des programmes) que tu utilises depuis
+ton shell.
+
+La 2eme et la 3eme contiennet des fonctions que tu peux appeler quand tu fais
+du langage C. La 2eme est celle des fonctions que ton Kernel te propose, la 3eme
+sont les fonctions de la libc (bibliothèque C).
+
 Un exemple. Si tu veux afficher le manuel de la fonction C printf (tu ne sais
 peut-être pas encore ce que c'est, ce n'est pas grave), tu serais tenté
 d'exécuter.
@@ -59,11 +66,15 @@ Si tu le fais, tu verras en haut à gauche **printf(1)**, le '1' entre
 parenthèses signifie que tu es dans la **1**ère section du manuel. Ce que tu
 veux c'est la **3**ème, pour les appels de la bibliothèque C (library calls).
 
+![mauvais printf](./rtfm/printf_wrong.png "mauvais printf")
+
 Il faut alors utiliser une de ces deux notations :
 ```sh
 $ man 3 printf
 $ man printf.3
 ```
+
+![bon printf](./rtfm/printf_good.png "bon printf")
 
 A partir de maintenant, pour toutes les commandes que tu as vues et verras, je
 t'invite très fortement à lire le manuel à chaque fois.
