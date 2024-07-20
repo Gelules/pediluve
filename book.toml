@@ -1,0 +1,9 @@
+[book]
+authors = ["Gélules"]
+language = "fr"
+multilingual = false
+src = "src"
+title = "Pédiluve"
+
+[output.html]
+mathjax-support = true

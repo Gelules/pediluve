@@ -1,0 +1,1 @@
+# Chaîne de caractères
