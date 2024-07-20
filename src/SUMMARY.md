@@ -1,12 +1,12 @@
 # Summary
 [Introduction](introduction/introduction.md)
 
-# Préliminaires
-- [Base 10](preliminaires/base_10.md)
-- [Base 2](preliminaires/base_2.md)
-- [Base 16](preliminaires/base_16.md)
-- [Bit et octet](preliminaires/bit_byte.md)
-- [Portes logiques](preliminaires/logic.md)
+- [Préliminaires]()
+    - [Base 10](preliminaires/base_10.md)
+    - [Base 2](preliminaires/base_2.md)
+    - [Base 16](preliminaires/base_16.md)
+    - [Bit et octet](preliminaires/bit_byte.md)
+    - [Portes logiques](preliminaires/logic.md)
 
 # Système
 - [Choix du système](linux/systeme.md)
