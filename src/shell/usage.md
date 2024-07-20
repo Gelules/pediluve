@@ -39,3 +39,17 @@ $ pwd
 /home/gelules
 $
 ```
+
+La commande **pwd** te dit où te trouves. C'est ton **P**ath **W**orking **D**irectory.
+
+# Shutdown et reboot
+
+Si tu veux arrêter ta machine, exécute la commande
+```sh
+$ shutdown now
+```
+
+Si tu veux rebooter ta machine, exécute la commande
+```sh
+$ reboot
+```
