@@ -284,7 +284,7 @@ stop=$3
 
 while [ "$start" -le "$stop" ]
 do
-    touch ${filename}_${i}.txt
+    touch ${filename}_${start}.txt
     start=$((start + 1))
 done
 ```
@@ -341,7 +341,7 @@ extension=$4
 
 while [ "$start" -le "$stop" ]
 do
-    touch ${filename}_${i}.${extension}
+    touch ${filename}_${start}.${extension}
     start=$((start + 1))
 done
 ```
