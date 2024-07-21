@@ -15,6 +15,40 @@ Ensuite, les touches fléchées haut et bas te permettent de te déplacer dans t
 historique de commandes et en rappeller plus rapidement qu'en réécrivant une
 commande.
 
+# Autocomplétion
+
+Ton shell est capable d'autocompléter tes commandes. Appuie sur sur la touche de
+tabulation pour lui demander d'autocompléter.
+
+```sh
+$ touch travail ventre ventricule
+$ ls t<TAB>
+```
+
+Tu verras que le fichier **travail** va s'autocompléter tout seul.
+
+```sh
+$ ls v<TAB>
+     ventr
+```
+
+Là il va faire face à un problème. Le shell ne peut pas deviner à ta place si tu
+veux ventre ou ventricule. En appuyant une deuxième fois sur TAB, il t'affichera
+quels fichiers correspondent.
+
+```sh
+$ ls v<TAB><TAB>
+     ventre ventricule
+```
+
+A toi de régler l'ambiguïté en ajoute **e** ou **i**.
+
+# Arrêt d'un programme
+
+Si jamais tu as lancé un programme ou un script depuis ton terminal et que tu
+veux arrêter son exécution, exécute la combinaison de touches **ctrl+c** pour
+envoyer un signal d'arrêt et reprendre la main sur ton terminal.
+
 # Recherche arrière
 
 Avec **ctrl+r**, tu peux recherche une commande. Par exemple **ctrl+r** *cp -*

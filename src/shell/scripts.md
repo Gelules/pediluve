@@ -107,3 +107,58 @@ $
 ```
 
 Tu comprendras la différence entre les deux dernières variables plus tard.
+
+## Exit status
+
+Tu peux appeler n'importe quel programme dans ton script, comme dans ton
+terminal.
+
+```sh
+#!/bin/sh
+
+ls $1
+mkdir ventre
+touch ventre/gateau
+ls -l ventre
+```
+
+Tu te rappelles des flux standards de sortie et d'erreur ? En plus de ça, il y a
+un autre moyen de voir si un script s'est bien exécuté ou non. En utilisant la
+variable **exit status**. C'est une variable spéciale qui recevra le code de
+sortie d'un programme.
+
+Habituellement, on dit en informatique que 0 est Faux et que 1 est Vrai. En
+shell c'est l'inverse. 0 est Vrai et ce qui n'est pas 0 est Faux. Un programme
+peut renvoyer 256 codes d'erreurs différents, allant de 0 à 255.
+
+Donc, on peut dire que Vrai est compris dans l'intervalle [0] et que Faux est
+compris dans l'intervalle [1;255].
+
+Pour voir le code de retour d'un programme, utilise la variable **$?**. Elle
+aussi le code de retour de la dernière commande exécutée.
+
+```sh
+#!/bin/sh
+
+touch fichier_existant
+ls fichier_existant
+echo exit_status: $?
+
+ls fichier_nonexistant
+echo exit_status: $?
+```
+
+```text
+$ ./script.sh
+fichier_existant
+exit_status: 0
+ls: cannot access 'fichier_nonexistant': No such file or directory
+exit_status: 2
+```
+
+Tu peux voir que **ls** retourne **2** quand il ne trouve pas un fichier.
+
+Je t'invite à lire le **man 1 ls** dans la section **Exit status**, tout est
+documenté dedans.
+
+Je t'invite à faire ça pour chaque programme que tu connais.

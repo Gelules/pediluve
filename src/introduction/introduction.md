@@ -26,13 +26,16 @@ Je présente également des outils que j'utilise au quotidien (awesomewm, vim,
 ...), qui ne sont pas toujours présentés dans les piscines. Ca te servira à
 avoir des références en plus pour travailler efficacement.
 
-Tu sortiras de ce cours avec plus qu'il n'en faut pour être prêt à la Piscine
+Tu sortiras de ce cours avec plus qu'il n'en faut pour attaque la Piscine
 d'EPITA, Epitech, 42, ou une autre école qui a également repris le concept.
 **Pour l'instant**, seule l'école 2600 échappe à l'objectif de ce document, car
 elle a de l'assembleur dans son bootcampt d'entrée que je ne présente pas encore.
 
 J'essaie d'être le plus simple et pratique possible. Pour les professionnels du
-métier, il y a des parties scientifiques laissées de côté pour ne pas alourdir
-la compréhension des notions aux nouveaux étudiants. Je préfère mettre en avant
+métier, il y a des parties laissées de côté pour ne pas alourdir la 
+compréhension des notions aux nouveaux étudiants. Je préfère mettre en avant
 l'exemple et la compréhension par la pratique avec des petits codes de test
-plutôt que des longs chapitres magistraux.
+plutôt que des longs chapitres magistraux. Il *manque* également des parties
+pour compléter des notions, mais ce sont des notions que les étudiants
+aborderont pendant leur Piscine, elles ne sont pas réellement manquantes pour un
+Pédiluve.

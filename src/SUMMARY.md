@@ -40,12 +40,7 @@
             - [PATH](shell/path.md)
         - [Quotting](shell/quotting.md)
         - [Tests et conditions](shell/tests.md)
-        - [Switch case](shell/switch_case.md)
         - [Boucles](shell/loops.md)
-            - [While](shell/while.md)
-            - [Until](shell/until.md)
-            - [For](shell/for.md)
-        - [Fonctions](shell/functions.md)
 
 # Git
 - [Git](git/introduction.md)
