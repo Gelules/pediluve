@@ -34,13 +34,11 @@
         - [Flux systèmes](shell/flux.md)
         - [Job control](shell/job_control.md)
         - [Scripts](shell/scripts.md)
+        - [Variables](shell/variable.md)
         - [Mathématiques](shell/maths.md)
         - [Variables d'environnement](shell/env.md)
             - [PATH](shell/path.md)
-        - [Variables](shell/variable.md)
-        - [Globbing](shell/globbing.md)
         - [Quotting](shell/quotting.md)
-        - [Sub-shell](shell/subshell.md)
         - [Tests et conditions](shell/tests.md)
         - [Switch case](shell/switch_case.md)
         - [Boucles](shell/loops.md)
@@ -48,15 +46,11 @@
             - [Until](shell/until.md)
             - [For](shell/for.md)
         - [Fonctions](shell/functions.md)
-    - [Misc](shell/misc.md)
-        - [Arrêter d'utiliser sleep comme un porc](shell/sleep.md)
 
 # Git
 - [Git](git/introduction.md)
     - [Commandes de bases](git/bases.md)
     - [Cas pratique avec GitHub](git/github.md)
-    - [Tags](git/tags.md)
-    - [Branches](git/branchs.md)
 
 # Langage C
 - [Langage C](c/introduction.md)
