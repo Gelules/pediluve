@@ -66,6 +66,7 @@ Sache que tu peux créer plusieurs répertoires d'un coup en les donnant à **ls
 
 ```sh
 $ mkdir Je suis un seul appel a mkdir
+```
 
 # Cache-cache
 
