@@ -346,3 +346,21 @@ $
 
 Les valeurs avec des étoiles '\*' sont ce qu'on appelle des **pointeurs**. Tu
 verras ce que c'est plus tard. Sache qu'un pointeur fait **toujours** 8 octets.
+
+## Chaines de caractères
+
+Je ne vais pas encore détailler ce qu'est une chaine de caractères, mais je vais
+te montrer comment en créer que tu puisses jouer avec.
+
+```c
+char *string = "My name Lules. Gé Lules";
+
+printf("string: %s\n", string);
+```
+
+Comme tu peux le voir, ça utilise le mot-clé **char** de caractère, mais avec
+l'utilisation d'un pointeur en plus. Et tu dois définir ta chaine de caractères
+entre guillements.
+
+Sache juste que tu ne peux pas modifier les chaines de caractères définies de
+cette manière. Tu verras comment réellement jouer avec plus tard.

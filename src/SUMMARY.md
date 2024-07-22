@@ -60,6 +60,7 @@
         - [Chaîne de caractères](c/string.md)
         - [Pointeurs](c/pointers.md)
         - [Boucles](c/loops.md)
+        - [Exercices](c/exercises.md)
         - [Structures de données](c/struct.md)
     - [Notions avancées](c/advanced_notions.md)
         - [Flags de compilation](c/compilation_flags.md)

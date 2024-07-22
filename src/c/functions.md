@@ -76,7 +76,7 @@ int main(void)
 ```
 
 Bravo ! Tu viens de créer ta première fonction. Quelle fierté. Tant d'autres
-d'attendent déjà.
+t'attendent déjà.
 
 Le positionnement des variables est important. **val_1** enverra sa valeur à
 **a** et **val_2** enverra sa valeur à **b**.
@@ -88,3 +88,54 @@ Il faut que les variables que tu envoies soient du même type. Si j'avais défin
 Petit exercice pratique : Crée 4 fonctions pour les 4 opérations mathémathiques
 que tu as appris plus jeune : addition, soustraction, multiplication et
 division.
+
+Voici une correction... sera t-il parfaite ?
+
+```c
+int addition(int a, int b)
+{
+    return a + b;
+}
+
+int soustraction(int a, int b)
+{
+    return a - b;
+}
+
+int multiplication(int a, int b)
+{
+    return a * b;
+}
+
+int division(int a, int b)
+{
+    return a / b;
+}
+```
+
+Penses-tu que tout fonctionne correctement avec ce que tu connais des
+mathématiques ?
+
+Il y a une *petite* erreur : si tu envoies **0** en deuxième paramètre à la
+fonction **division**, il y aura une **division par 0**.
+
+Voici une correction possible : si b vaut 0, alors on retourne 0.
+
+```c
+int division(int a, int b)
+{
+    if (b == 0)
+    {
+        return 0;
+    }
+
+    return a / b;
+}
+```
+
+Pour tester une égalité, tu dois utiliser la double égalité '=='. Avant que tu
+n'essaies, non, ça ne fonctionne pas avec les chaines de caractères. Mais ça
+fonctionne sur les caractères uniques.
+
+
+Tu verras plus tard comment agrémenter ton code de tests et conditions.
