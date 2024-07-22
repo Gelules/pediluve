@@ -71,7 +71,6 @@ $ mkdir Je suis un seul appel a mkdir
 # Cache-cache
 
 Il y a une dernière chose dont je ne t'ai pas parlé. Les fichiers cachés.
-```
 
 Les commandes shell ont pour habitude de ne rien afficher si tout se passe bien.
 En cas d'erreur, un message s'affichera. Lis toujours tes messages, il ne faut
