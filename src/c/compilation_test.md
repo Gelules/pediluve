@@ -32,4 +32,19 @@ $ ./mon_super_programme
 $
 ```
 
+Sache que tu peux commenter ton code pour le documenter et décrire que tu fais.
+Il existe deux types de commentaire. Les singie lines et les multilines.
+
+```c
+/* Cette fonction main
+ne prend rien en entrée et ne fait que
+retourner 0 */
+
+int main(void)
+{
+    // retourne 0 en exit status;
+    return 0;
+}
+```
+
 Voilà, tu es prêt pour la suite.

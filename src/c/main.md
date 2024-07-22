@@ -103,25 +103,26 @@ Décortiquons tout ça.
 
 #include <stdio.h> veut dire qu'on va inclure stdio.h. C'est un fichier quelque
 part dans les répertoires systèmes. C'est ce qu'on appelle une bibliothèque (et
-pas une librairie, une libraire c'est un endroit avec des livres. En revanche la
-traduction de bibliothèque en Anglais et library, d'où cet abus de langage).
+pas une librairie, une librairie c'est un endroit avec des livres. En revanche
+la traduction de bibliothèque en Anglais et library, d'où cet abus de langage).
 Cette bibliothèque contient du code pour indiquer à gcc qu'il existe quelque
 part une fonctione appelée **printf**.
 
-Ensuite il y a une boucle for. La boucle for initialise une variable **i** à 0.
+Ensuite il y a une boucle for. La boucle for initialise une variable **i** de
+type **int** à 0.
 Elle va continuer son exécution tant que **i est plus petit que argc**, et à
 chaque itération, **i s'incrémente de 1**. Tu peux voir que toutes les étapes de
 la boucle sont séparées par des point-virgules ';'.
 
 Ensuite, entre les accolades de la boucle, il y a un appel à la fonction
-**printf**. Le nom de la fonction signifie **print format**. Tu vas formater tu
+**printf**. Le nom de la fonction signifie **print format**. Tu vas formater du
 texte avec des arguments.
 
 Dans argv[%d], %d attend un entier. **i** qui est envoyé en paramètre juste
 après sera remplacé et aura sa valeur affichée entre les crochets.
 
 %s est un code qui attend une chaine de caractères. **argv** est le tableau qui
-contient ces chaines de caractères.
+contient des chaines de caractères.
 
 Enfin, \n signifie **saut à la ligne**. Plus exactement *linefeed*.
 
@@ -188,7 +189,7 @@ int main(int argc, char *argv[])
 Tout d'abord, la bibliothèque stdlib.h est inclue. Je te montrerai juste après
 comment savoir quelle bibliothèque inclure selon ce que tu veux utiliser.
 
-Je crée la variable age à 0 en tant qu'entier. C'est une bonne pratique,
+Je crée la variable **age** à 0 en tant qu'entier. C'est une bonne pratique,
 toujours créer ses variables au tout début, avec des valeurs définies à 0, sauf
 si tu as absolument besoin d'une autre valeur d'initialisation.
 
@@ -202,7 +203,7 @@ je l'affiche.
 
 Je t'invite à compiler ton programme et le tester ainsi :
 
-```sh
+```text
 $ gcc test.c -o mon_super_programme
 $ ./mon_super_programme
 $ echo $?
@@ -233,19 +234,22 @@ $ man atoi
 ...
 ```
 
-Tu peux le voir dans le man de atoi, on te demande d'inclure stdlib.h
+Tu peux voir dans le man de atoi qu'il faut inclure stdlib.h.
+
+Tu peux également vérifier dans le main quelle est la bibliothèque à inclure
+pour printf. Il s'agit bien de stdio.h.
 
 ```sh
 $ man 3 printf
 ...
 ```
 
-Attention à bien mettre 3 pour bien dire que c'est le printd du langage C que tu
+Attention à bien mettre 3 pour bien dire que c'est le printf du langage C que tu
 veux utiliser, pas le binaire installé sur le système.
 
-Parfois tu utilises des *syscalls*, des appels systèmes. Ce sont des fonctions
-fournies par le kernel Linux. La différence est qu'il faut demander la 2eme
-section du manuel.
+Plus tard dans ton cursus, tu utiliseras des *syscalls*, des appels systèmes. Ce
+sont des fonctions fournies par le kernel Linux. La différence est qu'il faut
+demander la 2eme section du manuel.
 
 ```sh
 $ man 2 write
