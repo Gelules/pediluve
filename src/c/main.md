@@ -28,7 +28,7 @@ programmes que tu as déjà utilisés comme **ls**, **echo**, **mkdir**, etc. Tu
 verras juste après comment faire.
 
 
-Change le 0 par un 1, compile ton programme, et exécute le. Tu verras que tu
+Change le 0 par un 42, compile ton programme, et exécute le. Tu verras que tu
 auras un **exit status** à 42.
 
 ```c
