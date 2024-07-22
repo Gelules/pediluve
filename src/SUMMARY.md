@@ -51,7 +51,7 @@
 - [Langage C](c/introduction.md)
     - [Abécédaire](c/abecedaire.md)
         - [Compilation de test](c/compilation_test.md)
-        - [La fonction main](c/main.md)
+        - [La fonction main et l'environnement de développement](c/main.md)
         - [Types prédéfinis](c/types.md)
         - [Fonctions](c/functions.md)
         - [Mathématiques](c/maths.md)

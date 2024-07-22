@@ -43,9 +43,9 @@ $
 
 ## Escape
 
-Une question t'a peut-être traversée l'esprit : Comment affiche une simple quote
-ou une double quote sans qu'elle ne soit compris comme un début ou fin de texte
-? Ou même affiché le signe dollar '$' sans utiliser de simple quote ?
+Une question t'a peut-être traversé l'esprit : Comment afficher une simple quote
+ou une double quote sans qu'elle ne soit comprise comme un début ou fin de texte
+? Ou même afficher le signe dollar '$' sans utiliser de simple quote ?
 
 Tu peux **échapper** un caractère spécial avec l'antislash.
 
@@ -66,7 +66,7 @@ $
 ```
 
 Entre simple quote, tu peux afficher sans problème un double quote. Pareil
-inversement, tu peux entre double quote affiche un simple quote.
+inversement, tu peux entre double quote afficher un simple quote.
 
 ```sh
 $ cat script.sh
