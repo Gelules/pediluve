@@ -61,6 +61,7 @@
         - [Pointeurs](c/pointers.md)
         - [Boucles](c/loops.md)
         - [Exercices](c/exercises.md)
+        - [Corrections](c/corrections.md)
         - [Structures de données](c/struct.md)
     - [Notions avancées](c/advanced_notions.md)
         - [Flags de compilation](c/compilation_flags.md)

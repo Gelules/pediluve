@@ -160,7 +160,7 @@ printf("op_xor = %d\n", op_xor);
 
 Tu peux aussi décaler des bits sur la gauche et sur la droite.
 
-Prenons la valeur 42 en binaire, codée sur 4 octets, donc 32 bits.
+Prenons la valeur 42 en binaire, codée sur un int (4 octets, donc 32 bits).
 
 ```text
 00000000000000000000000000101010
@@ -171,16 +171,45 @@ sur la droite. Attention si un bit disparaît d'un côté, il ne réapparait pas
 l'autre.
 
 ```c
-int valeur = 42;
+int valeur = 42;      // valeur = 00000000000000000000000000101010 = 42
 
 valeur = valeur << 1; // valeur = 00000000000000000000000001010100 = 84
 
-valeur = valeur << 2; // valeur = 00000000000000000000000101010000 = 168
+valeur = valeur << 2; // valeur = 00000000000000000000000101010000 = 336
 
 valeur = valeur >> 5; // valeur = 00000000000000000000000000001010 = 10
 
-valeur = valeur << 1; // valeur = 00000000000000000000000000101000 = 80
+valeur = valeur << 1; // valeur = 00000000000000000000000000010100 = 20
 ```
 
-Tu peux aussi écrire ces instructions de cette façon : valeur <<= 2 et valeur
-\>\>= 2
+Tu peux aussi écrire ces instructions de ces façons :
+
+```c
+valeur <<= 2;
+valeur >>= 2;
+```
+
+## L'inverseur logique
+
+Il existe un deuxième opérateur d'inversion en C qui est le point d'exclamation
+'!'. Celui-ci n'inverse pas les valeurs des bits mais la **véracité** d'une
+variable.
+
+En C, la valeur 0 vaut **Faux** et n'importe quelle autre valeur vaut **Vrai**.
+C'est exactement l'inverse du shell.
+
+Voici comment l'utiliser :
+
+```c
+int zero = 0;
+int one = 1;
+int two = 2;
+
+zero = !zero; // => zero = 1
+one = !one;   // => one = 0
+two = !two;   // => two = 0
+
+zero = !zero; // => zero = 0
+one = !one;   // => one = 1
+two = !two;   // => two = 1
+```
