@@ -29,7 +29,7 @@ avoir des références en plus pour travailler efficacement.
 Tu sortiras de ce cours avec plus qu'il n'en faut pour attaque la Piscine
 d'EPITA, Epitech, 42, ou une autre école qui a également repris le concept.
 **Pour l'instant**, seule l'école 2600 échappe à l'objectif de ce document, car
-elle a de l'assembleur dans son bootcampt d'entrée que je ne présente pas encore.
+elle a de l'assembleur dans son bootcamp d'entrée que je ne présente pas encore.
 
 J'essaie d'être le plus simple et pratique possible. Pour les professionnels du
 métier, il y a des parties laissées de côté pour ne pas alourdir la 
