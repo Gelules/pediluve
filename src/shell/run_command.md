@@ -60,20 +60,20 @@ Ca, c'est une **fonction** en shell. Une fonction c'est du code que tu pourras
 appeler depuis ton shell.
 
 ```sh
-    [ ! -d "$1" ] && mkdir -p $1
+[ ! -d "$1" ] && mkdir -p $1
 ```
 Cette ligne est compliquée à lire. Mais tu dois reconnaître la commande **mkdir
 -p**.
 
 ```sh
-    [ ! -d "$1" ]
+[ ! -d "$1" ]
 ```
 
 Ce morceau de code va vérifier si le **1**er argument n'existe pas comme
 répertoire.
 
 ```sh
-    && mkdir -p $1
+&& mkdir -p $1
 ```
 
 **&&** est une porte logique. Dans le contexte du shell, il s'agit de la porte
@@ -83,7 +83,7 @@ Vrai.
 La partie de droite créee une arborescence de répertoires.
 
 ```sh
-    cd $1
+cd $1
 ```
 
 cd va te déplacer dans le répertoire envoyé en **1**er argument.
@@ -91,7 +91,7 @@ cd va te déplacer dans le répertoire envoyé en **1**er argument.
 La fonction mkcd va donc créer un répertoire ou même toute une arborescence de
 répertoire et t'y **cd** automatiquement.
 
-```sh
+```text
 $ pwd
 /home/gelules
 $ ls /tmp/tests

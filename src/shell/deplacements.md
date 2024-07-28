@@ -62,15 +62,12 @@ Comme tu peux le voir, mon explorateur de fichiers s'est actualisé pour affiche
 le nouveau répertoire. Utilise la commande **ls** dans ton terminal pour valider
 que ton terminal le voit également.
 
-Sache que tu peux créer plusieurs répertoires d'un coup en les donnant à **ls**.
+Sache que tu peux créer plusieurs répertoires d'un coup en les donnant à
+**mkdir**.
 
 ```sh
 $ mkdir Je suis un seul appel a mkdir
 ```
-
-# Cache-cache
-
-Il y a une dernière chose dont je ne t'ai pas parlé. Les fichiers cachés.
 
 Les commandes shell ont pour habitude de ne rien afficher si tout se passe bien.
 En cas d'erreur, un message s'affichera. Lis toujours tes messages, il ne faut
@@ -167,6 +164,7 @@ $ ls -l
 total 0
 -rw-r--r-- 1 gelules wheel  0 Jul 20 18:56 fichier
 drwxr-xr-x 2 gelules wheel 40 Jul 20 18:55 repertoire
+$
 ```
 
 La première ligne indique combien de place sur le disque prend ce que tu listes.
@@ -349,7 +347,7 @@ intéressantes.
 ```sh
 $ mkdir -p je/suis/un/humain tu/es/un/gateau
 $ cd je/suis/un/humain
-$ cd ../../../tu/es/un/gateau
+$ cd ../../../../tu/es/un/gateau
 $ pwd
 ???
 $ cd -

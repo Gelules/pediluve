@@ -23,10 +23,11 @@ $ cd /tmp/test
 
 Crée le fichier avec ton éditeur et ajoute la ligne suivante dedans :
 ```sh
-$ vim firefox
+$ cat firefox
 #!/bin/sh
 
 echo Et non, je ne suis pas Firefox
+$
 ```
 
 Rends le exécutable.

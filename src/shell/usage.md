@@ -1,5 +1,8 @@
 # Utilisation
 
+J'admets ici que c'est la première fois que tu ouvres un shell qui a sa
+configuration par défaut.
+
 Une fois sur ton shell, voici ce qui se présente à toi.
 
 ```sh
