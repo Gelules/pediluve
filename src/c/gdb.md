@@ -240,6 +240,9 @@ Num     Type           Disp Enb Address            What
 (gdb)
 ```
 
+Pour supprimer un breakpoint, exécute **delete breakpoints
+NUMERO_DU_BREAKPOINT**.
+
 ### next et step
 
 Si tu veux avancer pas à pas, tu peux utiliser les commandes **next** ou **n**
