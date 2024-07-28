@@ -1,5 +1,7 @@
 # Pointeurs avancés
 
+## Arithmétique des pointeurs, 2ème partie
+
 Plus tôt, je t'ai dit qu'on pouvait incrémenter un pointeur pour avancer dans un
 tableau. Mais comment penses-tu que cela se passe en mémoire ?
 

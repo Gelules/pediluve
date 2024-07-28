@@ -290,7 +290,7 @@ qu'un pointeur fait 8 octets, car il ne pointe que sur une valeur. Il peut
 accéder aux prochaines valeurs comme un tableau mais est défini autrement en
 mémoire.
 
-# ## Arithmétique des pointeurs, 1ere partie
+## Arithmétique des pointeurs, 1ere partie
 
 Tu peux changer la valeur d'un pointeur et te déplacer vers la suite de la
 chaine.
