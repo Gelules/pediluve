@@ -109,7 +109,7 @@ int main(void)
 ```
 
 ```text
-$ $ ./mon_super_programme
+$ ./mon_super_programme
 sizeof (struct player): 48
 addr of p[0]: 0x7fffebaf2210
 addr of p[1]: 0x7fffebaf2240
