@@ -187,9 +187,9 @@ void swap(int *a, int *b)
 ## Chaînes de caractères
 
 ```c
-int strlen(char *s)
+unsigned int strlen(char *s)
 {
-    int result = 0;
+    unsigned int result = 0;
     for (int i = 0; s[i] != '\0'; ++i)
     {
         ++result;

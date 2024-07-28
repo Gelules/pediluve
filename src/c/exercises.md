@@ -175,13 +175,11 @@ int main(void)
 
 ## Chaînes de caractères
 
-Tu vas recoder plusieurs fonctions présentes dans **string.h**.
-
 Ecris le code de la fonction **strlen** qui renvoie le nombre de caractères dans
 une chaîne de caractères
 
 ```c
-int strlen(char *s);
+unsigned int strlen(char *s);
 ```
 
 Ecris le code de la fonction **upper** qui prend un tableau de caractères en
