@@ -1,6 +1,6 @@
 # Pointeurs avancés
 
-Plus tôt, je t'ai dis qu'on pouvait incrémenter un pointeur pour avancer dans un
+Plus tôt, je t'ai dit qu'on pouvait incrémenter un pointeur pour avancer dans un
 tableau. Mais comment penses-tu que cela se passe en mémoire ?
 
 Prends deux tableaux de types différents.
@@ -128,5 +128,9 @@ addr of p[15]: 0x7fffebaf24e0
 $
 ```
 
-Comme tu peux le voir, le tableau de struct avance de 0x30 en 0x30, donc de 48
-octets en 48 octets.
+Comme tu peux le voir, le tableau de struct avance de 0x30 octets en 0x30 octets,
+donc de 48 octets en 48 octets en base 10.
+
+C'est parce que le pointeur n'avance pas un par un comme on pourrait le croire
+avec la boucle, mais **sizeof (element)** par **sizeof (element)**. Ici,
+l'élément est la **struct player** qui fait 48 octets.

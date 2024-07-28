@@ -71,7 +71,7 @@
         - [Pointeurs avancés](c/advanced_pointers.md)
         - [Mémoire](c/memory.md)
         - [Listes chainées](c/linked_lists.md)
-        - [Débug](c/gdb.md)
+        - [GDB](c/gdb.md)
 
 # TODO: Assembleur
 - [Assembleur](asm/introduction.md)

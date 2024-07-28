@@ -12,7 +12,6 @@ phrases.
 
 Et pour être un peu plus correct.
 
-
 **Un pointeur est une adresse sur un type.**
 
 **Un pointeur est une adresse sur un type.**
@@ -30,6 +29,21 @@ La mémoire fonctionne comme un tableau. Il y a l'adresse 0, puis 1, puis 2, ...
 
 Et dans ces cases mémoires, se trouvent tout ton programme, avec les valeurs de
 tes variables.
+
+## Initialiser un pointeur à zéro
+
+Avant d'utiliser un pointeur, tu vas voir comment initialiser unpointeur *à
+zéro*.
+
+Pour cela, tu vas lui affecter la valeur **NULL**. C'est un *alias* sur un
+pointeur sur void à la valeur 0. C'est à dire (void *)0.
+
+```c
+int *ptr = NULL;
+```
+
+Voilà, si tu ne sais pas encore où pointera ton pointeur, par sécurité, met le à
+NULL.
 
 ## Afficher l'adresse d'une variable
 

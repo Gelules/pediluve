@@ -3,10 +3,14 @@
 Une fonction est un bout de code que tu peux appeler quand tu veux.
 
 Une fonction possède un identifiant (un nom), un type de retour et une entrée
-pour des paramètres.
+pour des paramètres. C'est ce qu'on appelle la **signature**.
 
 Voici comment définir une fonction et sa **portée** (la zone qui délimite le
 début et la fin du code qui sera exécuté).
+
+Les variables déclarées et définies dans une fonction ne sont vivantes que
+pendant l'exécution de cette fonction. Au **retour** d'une fonction, toutes les
+variables disparaissent.
 
 ```c
 type identifiant(type_param1 param1, type_param2 param2)
@@ -137,5 +141,21 @@ Pour tester une égalité, tu dois utiliser la double égalité '=='. Avant que 
 n'essaies, non, ça ne fonctionne pas avec les chaines de caractères. Mais ça
 fonctionne sur les caractères uniques.
 
-
 Tu verras plus tard comment agrémenter ton code de tests et conditions.
+
+### Quitter une fonction qui ne renvoie rien
+
+Si tu fois quitter une fonction qui ne renvoie rien (void), tu peux utiliser le
+mot-clé **return** seul.
+
+```c
+void positive_printer(int n)
+{
+    if (n < 0)
+    {
+        return;
+    }
+
+    printf("n: %d\n");
+}
+```
