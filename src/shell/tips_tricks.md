@@ -49,6 +49,11 @@ Si jamais tu as lancé un programme ou un script depuis ton terminal et que tu
 veux arrêter son exécution, exécute la combinaison de touches **ctrl+c** pour
 envoyer un signal d'arrêt et reprendre la main sur ton terminal.
 
+# Nettoyer le terminal
+
+Si tu veux nettoyer tout ce qui est affiché sur ton terminal pour repartir sur
+une vue propre, exécute la combinaison de touches **ctrl+l**.
+
 # Recherche arrière
 
 Avec **ctrl+r**, tu peux recherche une commande. Par exemple **ctrl+r** *cp -*

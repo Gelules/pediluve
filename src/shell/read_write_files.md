@@ -92,7 +92,7 @@ Pour lire un fichier, tu peux utiliser la redirection gauche '<' en mettant le
 nom de ton fichier.
 
 ```sh
-$ fichier_test
+$ < fichier_test
 # Contenu du fichier
 $
 ```
