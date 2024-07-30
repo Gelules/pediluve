@@ -1,6 +1,6 @@
 # C'est exact
 
-La notation en base 16 est appellée *héxadécimale*.
+La notation en base 16 est appellée *hexadécimale*.
 
 Les plus avertis se demanderont comment écrire un nombre dans une base plus
 grande que 10. La base 2 utilise 0 et 1, la base 10 va de 0 et 9... mais

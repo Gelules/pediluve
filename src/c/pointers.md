@@ -73,7 +73,7 @@ Comme tu peux le voir, le pointeur **addr_value** a comme valeur une adresse.
 
 **Un pointeur est une adresse.**
 
-Une valeur qui commence par **0x** est de l'héxadécimal.
+Une valeur qui commence par **0x** est de l'hexadécimal.
 
 Tu auras très probablement une autre valeur affichée. D'ailleurs chaque
 exécution *devrait* t'afficher une valeur différente (c'est une sécurité mise en
