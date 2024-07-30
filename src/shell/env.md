@@ -4,7 +4,7 @@ Les variables d'environnement sont des variables initialisées au lancement de
 ton shell.
 
 Tu peux les avoir avec cette commande :
-```sh
+```text
 $ env
 ```
 

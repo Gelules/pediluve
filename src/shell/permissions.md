@@ -7,7 +7,7 @@ imbitables ? C'est le moment de les biter.
 
 Reprenons dans répertoire Test vide.
 
-```sh
+```text
 $ touch fichier
 $ mkdir repertoire
 $ cp /bin/ls . # Si tu as une erreur, essaie avec /usr/bin/ls
@@ -58,7 +58,7 @@ utilisateurs dans le groupe wheel.
 
 Tu peux voir dans quel groupe tu es avec la commande **group**.
 
-```sh
+```text
 $ group
 ```
 
@@ -114,7 +114,7 @@ On a donc :
 
 Le droit à appliquer sera 761.
 
-```sh
+```text
 $ chmod 761 ls
 $ ls -l ls
 -rwxrw---x 1 gelules wheel 129728 Jul 20 21:29 ls
@@ -128,14 +128,14 @@ répertoire permet de s'y **cd**.
 
 Faisons un autre exemple.
 
-```sh
+```text
 $ chmod 300 repertoire
 ```
 
 Maintenant je n'ai que les droits de mofidication et d'exécution sur le
 répertoire **repertoire**.
 
-```sh
+```text
 $ nano repertoire/test
 ...
 $ ls repertoire

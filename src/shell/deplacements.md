@@ -31,7 +31,7 @@ aussi. La différence c'est que Thunar me liste directement tous mes fichiers.
 
 Pour lister ton répertoire courant, utilises la commande **ls**.
 
-```sh
+```text
 $ ls
 Desktop  Development  Documents  Downloads  Formation  mount_vbox_share.sh  Music  Pictures  Public  School  Templates  Videos
 $
@@ -41,7 +41,8 @@ Tu peux donner un ou plusieurs noms de fichiers et répertoires à **ls** pour
 lister leurs contenus.
 
 Depuis ton HOME, exécute
-```sh
+
+```text
 ls Desktop Documents Downloads
 ```
 
@@ -52,7 +53,7 @@ tester **ls** avec des noms de fichiers et répertoires donnés en paramètres.
 
 Pour créer un répertoire, utilise la commande **mkdir**.
 
-```sh
+```text
 mkdir Test
 ```
 
@@ -65,7 +66,7 @@ que ton terminal le voit également.
 Sache que tu peux créer plusieurs répertoires d'un coup en les donnant à
 **mkdir**.
 
-```sh
+```text
 $ mkdir Je suis un seul appel a mkdir
 ```
 
@@ -86,7 +87,7 @@ doubles-cliques dessus.
 Pour te déplacer dans un répertoire en terminal, c'est facile, tu utilises la
 commande **cd**.
 
-```sh
+```text
 $ cd Test
 ```
 
@@ -100,7 +101,7 @@ répertoire **Test** lui-même situé dans ton **HOME**.
 
 Tu peux créer une arborescence complète en donnant le paramètre **-p** à mkdir.
 
-```sh
+```text
 $ mkdir -p je/suis/une/longue/arborescence
 $
 ```
@@ -114,7 +115,7 @@ créer des fichiers vides.
 
 Pour se faire, utilise la commande **touch**.
 
-```sh
+```text
 $ touch je_suis_un_fichier
 $ ls
 ```
@@ -128,7 +129,7 @@ configuration de **ls**.
 Dans mon cas, si j'exécuter **which ls** pour en savoir plus sur la commande
 **ls**, j'ai ceci :
 
-```sh
+```text
 $ which ls
 ls: aliased to ls --color=auto
 $
@@ -139,7 +140,8 @@ colore les noms des fichiers et répertoires dans ton terminal.
 
 Exécute maintenant ceci, je fais exprès de cacher certains informations pour te
 forcer à exécuter les commandes :
-```sh
+
+```text
 $ ls
 $ mkdir repertoire
 $ touch fichier
@@ -159,7 +161,8 @@ Tu vas utiliser le paramètre **-l** à **ls** pour afficher le *long listing
 format*, pour afficher plein d'informations sur le répertoire où tu te trouves.
 
 Exécute
-```sh
+
+```text
 $ ls -l
 total 0
 -rw-r--r-- 1 gelules wheel  0 Jul 20 18:56 fichier
@@ -188,7 +191,7 @@ Pour information, le '.' situé au début de chaque résultat représente ton
 dossier courant (le *working directory*). Ca veut dire que si tu fais la
 commande
 
-```sh
+```text
 $ cd .
 ```
 
@@ -206,7 +209,7 @@ va supprimer un répertoire et toute son arborescence récursivement.
 Essaie le commandes suivantes, je n'affiche pas le résultat pour te forcer à
 visualiser par toi-même ce qu'il se passe.
 
-```sh
+```text
 $ ls
 je je_suis_un_fichier
 $ rmdir je_suis_un_fichier
@@ -251,13 +254,13 @@ supprimer plusieurs. Attention, **rm** doit toujours avoir son paramètre **-r**
 si tu supprimes des répertoires. Dans le cas de fichiers, tu n'as pas besoin de
 l'utiliser.
 
-```sh
+```text
 $ rmdir Je suis un seul appel a mkdir
 ```
 
 ou
 
-```sh
+```text
 $ rm -r Je suis un seul appel a mkdir
 ```
 
@@ -266,7 +269,7 @@ $ rm -r Je suis un seul appel a mkdir
 Pour copier des fichiers et des répertoires, tu peux utiliser la commande
 **cp**.
 
-```sh
+```text
 $ ls
 $ touch fichier_1
 $ cp fichier_1 fichier_2
@@ -296,7 +299,7 @@ récursivement avec l'option **-r**.
 Pour renommer ou déplacer un répertoire ou un fichier, utilise la commande
 **mv**, pour *M*o*V*e.
 
-```sh
+```text
 $ touch gato
 $ ls
 gato
@@ -324,7 +327,7 @@ arrière d'un niveau.
 
 Un exemple sera plus parlant.
 
-```sh
+```text
 $ mkdir -p toto/titi/tutu
 $ cd toto/titi/tutu
 $ cd ..
@@ -344,7 +347,7 @@ Si tu veux basculer vers le dernier répertoire visité, donne **-** en paramèt
 Je te laisse faire les commandes pour apprécier, j'ai caché exprès les parties
 intéressantes.
 
-```sh
+```text
 $ mkdir -p je/suis/un/humain tu/es/un/gateau
 $ cd je/suis/un/humain
 $ cd ../../../../tu/es/un/gateau
@@ -367,7 +370,7 @@ simplement **cd** sans paramètre.
 Je te laisse faire les commandes pour apprécier, j'ai caché exprès les parties
 intéressantes.
 
-```sh
+```text
 $ cd je/suis/un/humain
 $ pwd
 ???
@@ -380,7 +383,7 @@ $
 ### Cas particuliers
 Crée le répertoire **canare** et **cd** y toi dedans.
 
-```sh
+```text
 ~ $ mkdir canare
 ~ $ cd canare
 ~/canare $
@@ -389,7 +392,8 @@ Crée le répertoire **canare** et **cd** y toi dedans.
 Tu te rends compte que tu as fait une faute de frappe.
 
 Renomme le répertoire dans lequel tu te trouves ainsi :
-```sh
+
+```text
 ~/canare $ mv ../canare ../canard
 ~/canare $
 ```
@@ -397,7 +401,7 @@ Renomme le répertoire dans lequel tu te trouves ainsi :
 Horreur et damnation, ton shell affiche encore **canare**. Il faut que tu
 exécutes **cd .** pour que ton shell se mette à jour.
 
-```sh
+```text
 ~/canare $ cd .
 ~/canard $
 ```
@@ -406,13 +410,15 @@ Maintenant plus drôle. Tu vas créer ce qu'on appelle un **undefined behavior**
 ou **comportement indéfini**.
 
 Voici quelques commandes :
-```sh
+
+```text
 $ mkdir toto
 $ cd toto
 $ rmdir ../toto
 $ cd .
 $ pwd
 ```
+
 Que se passe t-il ? Tout dépend de ton shell, certains feront avec à leur
 manière, d'autres afficheront une erreur. C'est un comportement indéfini, le
 langage shell n'a pas défini quoi faire dans ce cas, chaque interpréteur a un
@@ -429,7 +435,7 @@ lui-même dans un répertoire nommé **/** (slash).
 Exécute la commande **ls /** pour voir ce qui se trouve à la racine de ton
 système de fichier (filesystem).
 
-```sh
+```text
 $ ls /
 bin  boot  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 ```
@@ -448,7 +454,7 @@ Si jamais tu dois faire des tests temporaires, je te renvoie au répertoire
 démarrage. Il peut être configuré pour être remis à zéro tous les jours,
 semaines, mois...
 
-```sh
+```text
 $ cd /tmp
 $ touch je_vais_disparaitre
 $ ls
@@ -466,7 +472,8 @@ Il y a une dernière chose dont je ne t'ai pas parlé. Les fichiers cachés.
 Je vais exprès de cacher certains informations pour te forcer à pratiquer.
 
 Exécute ces commandes depuis ton **HOME** :
-```sh
+
+```text
 $ mkdir Test
 $ cd Test
 $ touch .cache affiche
@@ -481,7 +488,8 @@ général de fichier de configuration personnelle pour tes programmes et c'est
 plus élégant de ne pas toujours les afficher.
 
 Si tu veux les afficher, exécute :
-```sh
+
+```text
 $ ls -a
 . .. .cache affiche
 ```
@@ -490,7 +498,8 @@ Mais que sont '.' et '..' ? Rappelle toi, le '.' représente le répertoire dans
 lequel tu te trouves et '..' représente le répertoire parent. 
 
 Si tu veux afficher tout ce qui est caché sauf '.' et '..', exécute :
-```sh
+
+```text
 $ ls -A
 .cache affiche
 ```

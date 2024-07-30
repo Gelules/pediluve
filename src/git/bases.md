@@ -27,7 +27,7 @@ Evidemment, change les informations avec les tiennes.
 
 Ces informations seront utiles pour savoir qui a créé quel commit.
 
-```sh
+```text
 $ mkdir projet
 $ cd projet
 $ git init
@@ -38,7 +38,7 @@ Voilà, le répertoire **projet** est prêt à utiliser git.
 Comment ça fonctionne ? Git crée en secret un répertoire caché qu'il utilise
 pour suivre l'état du projet.
 
-```sh
+```text
 $ ls -l .git
 ...
 $
@@ -58,7 +58,7 @@ fichiers.
 Tu vas créer deux fichiers, **README** et **file_creator.sh**. Pour l'instant
 ils seront vides.
 
-```sh
+```text
 $ touch README file_creator.sh
 $ git status
 Untracked files:
@@ -82,7 +82,7 @@ Pour créer un commit, il faut penser d'abord réfléchir à un message de commi
 **intelligent**. Le tout premier est en *général* un simple **initial commit**.
 Les prochains seront plus réfléchis selon le projet que tu effectues.
 
-```sh
+```text
 $ git commit -m "initial commit"
 [master (root-commit) 8a87f72] initial commit
  2 files changed, 0 insertions(+), 0 deletions(-)
@@ -107,7 +107,7 @@ exécutable en local, il le sera aussi sur la remote.
 Maintenant que tu as crée ton premier commit, tu peux voir les logs du projet
 évoluer avec la commande **git log**.
 
-```sh
+```text
 $ git log
 commit 8a87f728e30904f1cd837fd3ca2d4f17d11c0e58 (HEAD -> master)
 Author: Gélules <gelules@gelules.gelules>

@@ -2,7 +2,7 @@
 
 Pour installer vscode, installer le paquet code
 
-```sh
+```text
 $ sudo apt install code # Ubuntu
 $ sudo pacman -S code # Arch et Manjaro
 $ sudo dnf install code # Fedora
@@ -20,7 +20,7 @@ contient des fichiers.
 
 Tu peux également appeler vscode avec des fichiers en paramètres.
 
-```sh
+```text
 code fichier_1 fichier_2
 ```
 

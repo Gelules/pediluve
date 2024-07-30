@@ -18,7 +18,7 @@ Ce qui fait que tout ce que tu vas voir à partir d'ici est possible à exécute
 dans ton terminal.
 
 Voici le minimum d'un script shell :
-```
+```sh
 #!/bin/sh
 ```
 
@@ -31,12 +31,12 @@ systèmes n'ont pas **zsh** installés.
 
 Pour rendre exécutable ton script, tu peux calculer les valeurs qui vont bien
 avec **chmod**, ou aller plus vite en exécutant cette commande :
-```sh
+```text
 $ chmod +x script.sh
 ```
 
 Et maintenant pour l'exécuter :
-```sh
+```text
 $ ./script.sh
 ```
 
@@ -49,7 +49,7 @@ ensuite des exemples d'exécution pour que tu voies les différences.
 Avant de montrer le script, je dois te présenter une nouvelle commande :
 **echo**. Elle affiche ce que tu lui donnes en paramètre sur **stdout**.
 
-```sh
+```text
 $ echo Coucou les amis !
 Coucou les amis !
 $
@@ -90,7 +90,7 @@ script et auront des valeurs différentes selon comment tu exécutes le script.
 
 Exécute le script avec ces paramètres et regarde ce qu'il se passe.
 
-```sh
+```text
 $ ./script.sh
 ...
 $ ./script.sh toto

@@ -199,7 +199,7 @@ Il n'est pas optimisé du tout. Comme tu peux le voir, il y a du code qui se
 répète. On retrouve beaucoup de fois
 
 ```sh
-    echo "TP $login dans 'LIEU'" >> "$save_file"
+echo "TP $login dans 'LIEU'" >> "$save_file"
 ```
 
 mais c'est un problème pour plus tard. Pour l'instant il faut que tu apprennes à

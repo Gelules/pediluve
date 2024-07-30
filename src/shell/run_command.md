@@ -4,12 +4,12 @@ Tu ne le sais peut-être pas, ton shell est configuré par un fichier **Run
 Command**. C'est un fichier caché dans ton **HOME**.
 
 Si tu es sur bash, ton fichier de configuration est
-```sh
+```text
 $ ~/.bashrc
 ```
 
 Si tu es sur zsh, ton fichier de configuration est
-```sh
+```text
 $ ~/.zshrc
 ```
 
@@ -22,6 +22,7 @@ On va agrémenter ton fichier de configuration avec une petite fonction bien
 sympathique que j'aime bien.
 
 Ouvre ton fichier de configuration et ajoute à la fin ces lignes :
+
 ```sh
 mkcd ()
 {
@@ -31,7 +32,7 @@ mkcd ()
 ```
 
 Pour mettre à jour la configuration du shell où tu te trouves, exécute
-```sh
+```text
 $ . ~/.zshrc
 ```
 
@@ -62,6 +63,7 @@ appeler depuis ton shell.
 ```sh
 [ ! -d "$1" ] && mkdir -p $1
 ```
+
 Cette ligne est compliquée à lire. Mais tu dois reconnaître la commande **mkdir
 -p**.
 

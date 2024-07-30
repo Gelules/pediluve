@@ -16,13 +16,13 @@ On va faire un petit jeu.
 
 Crée le répertoire **/tmp/test/** et **cd** dedans.
 
-```sh
+```text
 $ mkdir /tmp/test
 $ cd /tmp/test
 ```
 
 Crée le fichier avec ton éditeur et ajoute la ligne suivante dedans :
-```sh
+```text
 $ cat firefox
 #!/bin/sh
 
@@ -32,7 +32,7 @@ $
 
 Rends le exécutable.
 
-```sh
+```text
 $ chmod +x firefox
 ```
 
@@ -51,7 +51,7 @@ créer.
 
 Tu peux voir quel programme ton shell trouvera avec la commande **which**.
 
-```sh
+```text
 $ which firefox
 /tmp/test/firefox
 $

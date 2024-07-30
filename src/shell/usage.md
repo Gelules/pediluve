@@ -5,7 +5,7 @@ configuration par défaut.
 
 Une fois sur ton shell, voici ce qui se présente à toi.
 
-```sh
+```text
 username@hostname:~$
 ```
 
@@ -30,14 +30,14 @@ seront exécutées en tant que **root** (admin).
 
 Pour simplifier la lecture des codes que je vais présenter, mon shell sera
 présenté ainsi :
-```sh
+```text
 $
 ```
 
 Pour essayer, entre la commande **pwd**, et vois la différence de résultat avec
 la mienne.
 
-```sh
+```text
 $ pwd
 /home/gelules
 $
@@ -48,11 +48,11 @@ La commande **pwd** te dit où te trouves. C'est ton **P**ath **W**orking **D**i
 # Shutdown et reboot
 
 Si tu veux arrêter ta machine, exécute la commande
-```sh
+```text
 $ shutdown now
 ```
 
 Si tu veux rebooter ta machine, exécute la commande
-```sh
+```text
 $ reboot
 ```

@@ -28,7 +28,7 @@ toi, tu n'auras rien à faire une fois que tout est installé.
 
 Va dans ton **HOME** et crée le répertoire **.ssh**. Dedans, crée les clés SSH.
 
-```sh
+```text
 $ cd
 $ mkdir .ssh
 $ cd .ssh
@@ -46,7 +46,7 @@ Met un mot de passe si tu veux.
 **ATTENTION**, si tu veux absolument mettre un mot de passe, alors je te
 conseille de changer la génération de tes clés avec cette commande
 
-```sh
+```text
 $ ssh-keygen -t ed25519 -a 100
 ```
 
@@ -119,7 +119,7 @@ sur **SSH**. Copie le lien qui est inscrit. Le mien ressemble à ceci :
 git@github.com:Gelules/file_creator.git
 
 Retourne dans ton **HOME** et exécute la commande suivante :
-```sh
+```text
 $ git clone git@github.com:Gelules/file_creator.git
 ...
 $ cd file_creator
@@ -141,7 +141,7 @@ et les commit avec le message **initial commit**.
 Maintenant que tu es retourné à l'état du chapitre précédent, tu vas pousser tes
 fichiers vides.
 
-```sh
+```text
 $ git push
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
@@ -169,7 +169,7 @@ Rends le exécutable, ajoute le, crée un commit pour indiquer que le fichier do
 être exécutable et pousse ton travail.
 
 
-```sh
+```text
 $ chmod +x file_creator.sh
 $ git status
 $ git add file_creator.sh
@@ -302,7 +302,7 @@ une deuxième fois ton dépôt ailleurs. Dans le répertoire **/tmp** par exempl
 
 Ouvre un deuxième terminal et effectue ces commandes.
 
-```sh
+```text
 $ cd /tmp
 $ git clone git@github.com:Gelules/file_creator.git
 ...
@@ -360,7 +360,7 @@ remédier.
 
 Sur ton deuxième terminal :
 
-```sh
+```text
 $ git pull
 ...
 $

@@ -38,7 +38,7 @@ int main(void)
 }
 ```
 
-```sh
+```text
 $ gcc test.c -o mon_super_programme
 $ ./mon_super_programme
 $ echo $?
@@ -127,7 +127,7 @@ contient des chaines de caractères.
 Enfin, \n signifie **saut à la ligne**. Plus exactement *linefeed*.
 
 Compile et exécute ton programme ainsi :
-```sh
+```text
 $ gcc test.c -o mon_super_programme
 $ ./mon_super_programme coucou les loulous 0 1 10
 argv[0] = ./mon_super_programme
@@ -229,7 +229,7 @@ nombre, sinon il renvoie 0.
 Pour savoir quel bibliothèque utiliser, tu vas utiliser ton meilleur ami, le
 man.
 
-```sh
+```text
 $ man atoi
 ...
 ```
@@ -239,7 +239,7 @@ Tu peux voir dans le man de atoi qu'il faut inclure stdlib.h.
 Tu peux également vérifier dans le main quelle est la bibliothèque à inclure
 pour printf. Il s'agit bien de stdio.h.
 
-```sh
+```text
 $ man 3 printf
 ...
 ```
@@ -251,7 +251,7 @@ Plus tard dans ton cursus, tu utiliseras des *syscalls*, des appels systèmes. C
 sont des fonctions fournies par le kernel Linux. La différence est qu'il faut
 demander la 2eme section du manuel.
 
-```sh
+```text
 $ man 2 write
 ```
 
@@ -262,7 +262,7 @@ Tu sauras avec le temps si tu cherches un syscall ou une fonction.
 Si tu veux lister les sections pour un mot en particulier dans le man, tu peux
 utiliser la commande suivante :
 
-```sh
+```text
 $ man -k printf
 ...
 ```
@@ -271,7 +271,7 @@ Tu verras que ça va générer **BEAUCOUP** de lignes. Tu peux filter en rajouta
 un circonflexe '^' au début du mot et un dollar '$' à a fin, le tout entre
 simple quote.
 
-```sh
+```test
 $ man -k '^printf$'
 ...
 ```
@@ -279,7 +279,7 @@ $ man -k '^printf$'
 Ce sont des caractères spéciaux. ^ signifie début de ligne et $ signifie fin de
 ligne.
 
-```sh
+```text
 $ man -k '^read$'
 ...
 ```

@@ -6,14 +6,14 @@ La sortie standard (ou **stdout**) est le flux de texte affiché sur ton termina
 quand tout se passe bien.
 
 Par exemple, quand tu exécutes
-```sh
+```text
 $ ls -l fichier_existant # assure toi que le fichier existe
 ```
 Tout ce qui est affiché passe par **stdout**.
 
 Tu peux rediriger le flux dans un fichier en utilisant un chevron.
 
-```sh
+```text
 $ ls -l > fichier_stdout
 $ cat fichier_stdout
 ```
@@ -23,7 +23,7 @@ redirigé dans un fichier qui n'existait pas.
 
 Recommence l'opération.
 
-```sh
+```text
 $ ls -l > fichier_stdout
 $ cat fichier_stdout
 ```
@@ -33,7 +33,7 @@ Le fichier n'a pas gardé l'information précédente. Il a été *tronqué*.
 Si tu veux garder le contenu du fichier à chaque redirection, tu peux utiliser
 la **double redirection**.
 
-```sh
+```text
 $ ls -l >> fichier_stdout
 $ cat fichier_stdout
 ```
@@ -44,7 +44,7 @@ Si tu veux rediriger stdout dans le **vide**, c'est à dire ne pas l'afficher et
 ne pas le rediriger dans un fichier, tu peux utiliser le fichier **/dev/null**
 comme fichier de redirection.
 
-```sh
+```text
 $ ls -l > /dev/null
 ```
 
@@ -58,7 +58,7 @@ mais en empruntant un autre flux. Il ne s'affiche qu'en cas d'erreur.
 
 Prenons la situtation suivante :
 
-```sh
+```text
 $ ls
 fichier_existant
 $ ls -l fichier_existant fichier_inexistant
@@ -71,7 +71,7 @@ La première ligne avec le message d'erreur emprunte le flux d'erreur, et la
 seconde emprunte stdout.
 
 Tu peux les séparer dans des fichiers différents ainsi :
-```sh
+```text
 $ ls -l fichier_existant fichier_inexistant >stdout.txt 2>stderr.txt
 $ cat stdout.txt stderr.txt
 ...
@@ -83,7 +83,7 @@ mais tu n'es pas obligé de l'écrire, sauf à une condition.
 Si tu veux rediriger **stderr** vers **stdout**, tu dois le faire de cette
 façon.
 
-```sh
+```text
 $ ls -l fichier_existant fichier_inexistant 1>stdout.txt 2>&1
 ```
 
@@ -103,7 +103,7 @@ l'entrée clavier. Ce que fais ton shell à chaque fois que tu appuies sur Entr�
 il lit son entrée standard pour recevoir ta commande.
 
 Faisons quelques exemples plus parlant :
-```sh
+```text
 $ ls
 $ ls -l / > racine.txt
 $ wc -l racine.txt
@@ -112,7 +112,7 @@ $ wc -l racine.txt
 **wc -l** te permet de compter le nombre de lignes dans un fichier. Mais tu
 aurais pu faire ça en une seule commande grâce au **pipe** (tuyau).
 
-```sh
+```text
 $ ls -l / | wc -l
 ```
 
@@ -120,7 +120,9 @@ Le pipe '|' te permet de passer la sortie de **ls** dans l'entrée de **wc**.
 
 Beaucoup d'outils sur Linux fonctionne ainsi.
 
-Prenons un enchaînement de commandes plus drôle :```sh
+Prenons un enchaînement de commandes plus drôle :
+
+```text
 $ ls -l / | cut -d ' ' -f 1 | tee permissions | wc -l
 ```
 
@@ -129,7 +131,7 @@ Voici deux nouvelles commandes.
 **cut** va couper des colonnes selon un délimiteur.
 
 Prenons la sortie de **ls -l /**.
-```sh
+```text
 $ ls -l /
 total 56
 lrwxrwxrwx   1 root root       7 Apr  7 20:02 bin -> usr/bin
@@ -160,7 +162,7 @@ le délimiteur ESPACE ' '.
 On n'aura donc que la première colonne avec **cut**.
 On n'aura donc que la première colonne avec **cut -d ' ' -f 1**
 
-```sh
+```text
 $ ls -l / | cut -d ' ' -f1
 total
 lrwxrwxrwx
@@ -191,7 +193,7 @@ Imagine la lettre 'T' (tee en pronociation Anglaise), la barre de gauche est son
 entrée standard, la barre qui descend est le fichier, la barre de droite est
 **stdout**.
 
-```sh
+```text
 $ ls -l / | cut -d ' ' -f1 | tee permissions
 total
 lrwxrwxrwx

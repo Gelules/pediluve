@@ -20,14 +20,14 @@ commande.
 Ton shell est capable d'autocompléter tes commandes. Appuie sur sur la touche de
 tabulation pour lui demander d'autocompléter.
 
-```sh
+```text
 $ touch travail ventre ventricule
 $ ls t<TAB>
 ```
 
 Tu verras que le fichier **travail** va s'autocompléter tout seul.
 
-```sh
+```text
 $ ls v<TAB>
      ventr
 ```
@@ -36,7 +36,7 @@ Là il va faire face à un problème. Le shell ne peut pas deviner à ta place s
 veux ventre ou ventricule. En appuyant une deuxième fois sur TAB, il t'affichera
 quels fichiers correspondent.
 
-```sh
+```text
 $ ls v<TAB><TAB>
      ventre ventricule
 ```

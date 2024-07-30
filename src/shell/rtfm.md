@@ -5,7 +5,7 @@ faut que tu fasses confiance à ton meilleur ami : ~~Google~~ le manuel.
 
 Pour l'invoquer, utilise la commande **man**.
 
-```sh
+```text
 $ man ls
 ```
 
@@ -17,7 +17,7 @@ Chaque commande a son manuel, mais aussi certaines notions de Linux.
 
 Par exemple, si tu veux en apprendre plus sur ton système de fichier, exécute la
 commande
-```sh
+```text
 $ man hier
 ```
 
@@ -26,7 +26,7 @@ hier pour *hierarchy*.
 Et si tu veux apprendre à utiliser le manuel, alors consulte le manuel du
 manuel.
 
-```sh
+```text
 $ man man
 ```
 
@@ -58,7 +58,7 @@ Un exemple. Si tu veux afficher le manuel de la fonction C printf (tu ne sais
 peut-être pas encore ce que c'est, ce n'est pas grave), tu serais tenté
 d'exécuter.
 
-```sh
+```text
 $ man printf
 ```
 
@@ -69,7 +69,7 @@ veux c'est la **3**ème, pour les appels de la bibliothèque C (library calls).
 ![mauvais printf](./rtfm/printf_wrong.png "mauvais printf")
 
 Il faut alors utiliser une de ces deux notations :
-```sh
+```text
 $ man 3 printf
 $ man printf.3
 ```

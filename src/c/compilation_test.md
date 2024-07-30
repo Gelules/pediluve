@@ -8,7 +8,7 @@ Tu vas pour ce cours faire tes codes de test dans un seul et unique fichier que
 tu vas appeler **test.c**. Ton compilateur est **gcc**. Installe le si tu ne
 l'as pas.
 
-```sh
+```text
 $ which gcc
 /usr/bin/gcc
 $
@@ -26,7 +26,7 @@ int main(void)
 Tu peux écrire ton code entre les accolades pour commencer.
 
 Pour compiler et essayer ton programme, voici la commande à utiliser :
-```sh
+```text
 $ gcc test.c -o mon_super_programme
 $ ./mon_super_programme
 $

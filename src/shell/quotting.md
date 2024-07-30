@@ -76,6 +76,7 @@ echo "Voici un double quote entre double quote => \" <= pas mal hein ?"
 echo 'Voici un double quote entre simple quote => " <= pas mal hein ?'
 echo "Voici un simple quote entre double quote => ' <= pas mal hein ?"
 ```
+
 ```text
 $ ./script.sh
 Voici un double quote entre double quote => " <= pas mal hein ?

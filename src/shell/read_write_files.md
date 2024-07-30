@@ -11,7 +11,7 @@ veut extrêmement simple d'utilisation et surtout s'exécute dans le terminal.
 Mettons que tu sois dans ton **HOME**, nous allons faire les tests d'écriture et
 lecture dans le répertoire Test.
 
-```sh
+```text
 $ mkdir Test
 $ cd Test
 ```
@@ -82,7 +82,7 @@ entretemps, il te demandera si tu veux sauvegarder avant de quitter.
 De retour sur le shell, tu peux rouvrir ton fichier avec nano en lui donnant son
 nom en paramètre.
 
-```sh
+```text
 $ nano fichier_test
 ```
 
@@ -91,7 +91,7 @@ $ nano fichier_test
 Pour lire un fichier, tu peux utiliser la redirection gauche '<' en mettant le
 nom de ton fichier.
 
-```sh
+```text
 $ < fichier_test
 # Contenu du fichier
 $
@@ -99,7 +99,7 @@ $
 
 Tu peux aussi utiliser la commande **cat**
 
-```sh
+```text
 $ cat fichier_test
 # Contenu du fichier
 $
@@ -111,7 +111,7 @@ pour que tes fichiers soient considérés comme valides.
 
 Rouvre ton fichier avec nano et ajoute des espaces à la fin d'une ou plusieurs
 lignes de texte. Exécute maintenant 
-```sh
+```text
 $ cat -e fichier_test
 # Contenu du fichier avec des '$' en fin de ligne
 $
@@ -125,7 +125,7 @@ moche, bouh !
 
 Rouvre ton fichier avec nano et supprime ces espaces en trop.
 
-```sh
+```text
 $ cat -e fichier_test
 Je suis un fichier$
 avec     $
@@ -138,7 +138,7 @@ $ nano fichier_test
 ...
 ```
 
-```sh
+```text
 $ cat -e fichier_test
 Je suis un fichier$
 avec$
