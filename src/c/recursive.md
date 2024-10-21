@@ -5,12 +5,23 @@ Avais-tu pensé à appeler la fonction dans laquelle tu étais ?
 Voici un exemple :
 
 ```c
+#include <stdio.h>
+
 unsigned int mystery(unsigned int n)
 {
     if (n == 0)
         return 0;
 
     return n + mystery(n - 1);
+}
+
+int main(void)
+{
+    unsigned int value = 3;
+    unsigned int result = mystery(value);
+    printf("mystery(%u) = %u\n", value, result);
+
+    return 0;
 }
 ```
 
@@ -26,6 +37,82 @@ Voilà ce qu'il se passe en mémoire avec **n = 3**.
 ![n = 3](./recursive/recursive.svg "n = 3")
 
 \\[ 3 + 2 + 1 + 0 = 6 \\]
+
+Prenons un autre exemple extrêmement simple :
+
+```c
+#include <stdio.h>
+
+void counter(unsigned int n)
+{
+    printf("%u\n", n);
+
+    if (n == 0)
+        return;
+
+    counter(n - 1);
+}
+
+int main(void)
+{
+    counter(10);
+    return 0;
+}
+```
+
+Avec **n = 10**, ça crée un compteur qui va de 10 à 0.
+
+```text
+$ gcc test.c -o mon_super_programme
+$ ./mon_super_programme
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+$
+```
+
+Il faut faire attention à une chose avec la récursivité : **la condition
+d'arrêt**.
+
+Dans les deux exemples ci-dessus, on vérifie toujours le cas où **n == 0**. Si
+la condition est vraie, on quitte la fonction. Dans le cas contraire, on
+rappelle la fonction avec **n** qui décrémente de 1.
+
+Si tu ne mets pas de condition d'arrêt, tu vas partir en récursion infinie, et
+avoir ce qu'on appelle un **stack overflow**.
+
+
+Je te laisse essayer ce bout ce code qui n'a pas de condition d'arrêt :
+
+```c
+#include <stdio.h>
+
+void counter(unsigned int n)
+{
+    printf("%u\n", n);
+
+    counter(n - 1);
+}
+
+int main(void)
+{
+    counter(10);
+    return 0;
+}
+```
+
+A chaque appel de la fonction **counter**, la mémoire recrée une zone mémoire
+pour la nouvelle fonction appelée, qui est une **stack**. Ta mémoire n'étant pas
+infinie, quand elle n'a pas de place pour une nouvelle **stack**, le programme
+crash avec un **stack overflow**.
 
 Tu verras pendant ta Piscine d'autres cas d'utilisation de la récursivité. Sache
 que c'est utile pour résoudre des gros problèmes en découpant un problème en
