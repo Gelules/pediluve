@@ -10,7 +10,9 @@ Voici un exemple :
 unsigned int mystery(unsigned int n)
 {
     if (n == 0)
+    {
         return 0;
+    }
 
     return n + mystery(n - 1);
 }
@@ -48,7 +50,9 @@ void counter(unsigned int n)
     printf("%u\n", n);
 
     if (n == 0)
+    {
         return;
+    }
 
     counter(n - 1);
 }
