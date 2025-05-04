@@ -32,7 +32,7 @@ tes variables.
 
 ## Initialiser un pointeur à zéro
 
-Avant d'utiliser un pointeur, tu vas voir comment initialiser unpointeur *à
+Avant d'utiliser un pointeur, tu vas voir comment initialiser un pointeur *à
 zéro*.
 
 Pour cela, tu vas lui affecter la valeur **NULL**. C'est un *alias* sur un
