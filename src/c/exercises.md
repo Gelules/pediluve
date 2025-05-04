@@ -117,12 +117,12 @@ int is_alphanum(char c)
 
 Ecris la fonction **graduate** qui :
 
-* Affiche "Mauvais" si la note est compris dans l'intervalle [0;8]
-* Affiche "Moyen" si la note est compris dans l'intervalle [9;12]
-* Affiche "Bien" si la note est compris dans l'intervalle [13;16]
-* Affiche "Très bien" si la note est compris dans l'intervalle [17;19]
+* Affiche "Mauvais" si la note est comprise dans l'intervalle [0;8]
+* Affiche "Moyen" si la note est comprise dans l'intervalle [9;12]
+* Affiche "Bien" si la note est comprise dans l'intervalle [13;16]
+* Affiche "Très bien" si la note est comprise dans l'intervalle [17;19]
 * Affiche "Parfait" si la note est à 20
-* Affiche "Quoi ?" si la note n'est pas compris dans l'intervalle [0;20]
+* Affiche "Quoi ?" si la note n'est pas comprise dans l'intervalle [0;20]
 
 ```c
 void graduate(int n);
