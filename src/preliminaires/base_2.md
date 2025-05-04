@@ -196,8 +196,8 @@ Résultat = 101010000101
 
 \\[ 1 / 2 = 0 \\]
 \\[ 1 \\% 2 = 1 \\]
-Résultat = 0101010000101
+Résultat = 1101010000101
 
 Ta dernière division donne 0. Tu as terminé.
 
-Tu sais maintenant que 6789 s'écrit 0101010000101 en base 2.
+Tu sais maintenant que 6789 s'écrit 1101010000101 en base 2.
